@@ -11,7 +11,7 @@ import {initializeFirestore, addDoc, setDoc, collection, getFirestore, getDocs, 
 import {getDownloadURL, getStorage, ref} from 'firebase/storage';
 const FirebaseContext= createContext(null);
 const firebaseConfig = {
-    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY||'mock_key',
     authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
     projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
     storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
@@ -61,23 +61,6 @@ export const FirebaseProvider=(props)=>{
             pin:pin
         });
     };
-    /*const uppro=async(order,id)=>{
-        const ref=doc(dbb,"orders",id);
-        await setDoc(ref,{
-            Order_id:order
-        },{merge:true});
-    }        
-        /*products.map(async(i)=>(
-            await setDoc(ref,{
-                image:i.image,
-                name:i.name,
-                quantity:i.qty,
-                price:i.price,
-                order_date:dd,
-                User_email:email
-            },{merge:true})
-        ));
-    };*/
     const product=async(products,total,dd,id)=>{
         await setDoc(doc(dbb,'orders',id),{
             Products:products,
