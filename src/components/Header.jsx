@@ -18,7 +18,7 @@ if(firebase.logged==false)
     <header class="text-gray-600 body-font bg-amber-300">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <img src="../assets/Screenshot (9).png" class="w-14 h-11 rounded-full"/> 
+      <img src="./src/assets/Screenshot (9).png" class="w-14 h-11 rounded-full"/> 
       <span class="ml-3 text-xl">Flux Fashion</span>
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -45,7 +45,7 @@ if(firebase.logged==false)
     <header class="text-gray-600 body-font bg-amber-300">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <img src="../assets/Screenshot (9).png" class="w-14 h-11 rounded-full"/>
+      <img src="./src/assets/Screenshot (9).png" class="w-14 h-11 rounded-full"/>
         <span class="ml-3 text-xl">Flux Fashion</span>
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">

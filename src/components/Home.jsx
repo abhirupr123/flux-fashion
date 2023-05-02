@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { useFirebase } from '../Firebase';
-import {} from '../assets'
 const Home = () => {
   const firebase=useFirebase();
   const[name,setName]=useState('');
@@ -22,10 +21,10 @@ const Home = () => {
     <div class="flex flex-wrap md:-m-2 -m-1">
       <div class="flex flex-wrap w-1/2">
         <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="w- object-cover h-96 object-center block" src="../assets/yfm2apdj.png"/>
+          <img alt="gallery" class="w- object-cover h-96 object-center block" src="./src/assets/yfm2apdj.png"/>
         </div>
         <div class="md:p-2 p-1 w-1/2">
-          <img alt="gallery" class="max-w-lg h-96 object-cover object-center block" src="../assets/pexels-photo-1043473.jpeg"/>
+          <img alt="gallery" class="max-w-lg h-96 object-cover object-center block" src="./src/assets/pexels-photo-1043473.jpeg"/>
         </div>
         <div class="md:p-2 p-1 w-full">
           <img alt="gallery" class="max-w-xl h-80 object-cover object-center block" src="https://www.myraymond.com/assets/images/fresh_arriva_sale.jpg"/>       
@@ -52,7 +51,7 @@ const Home = () => {
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="../assets/shop_40_desktop_v2.webp"/>
+          <img alt="content" class="object-cover object-center h-full w-full" src="./src/assets/shop_40_desktop_v2.webp"/>
         </div>
         <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">On Formal Wear</h2>
         <p class="leading-relaxed text-base">Get flat 40% off during the Clearance Sale on new arrivals of shirts, suits and other Formal and Office Wear. Use Code WELCOME40</p>
@@ -62,7 +61,7 @@ const Home = () => {
       </div>
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="../assets/2_v2.webp"/>
+          <img alt="content" class="object-cover object-center h-full w-full" src="./src/assets/2_v2.webp"/>
         </div>
         <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">On Casual Wear</h2>
         <p class="leading-relaxed text-base">Browse Ethnic and Casual Wear from our collection of Best Sellers from top brands starting from ₹500.</p>
