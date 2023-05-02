@@ -4,7 +4,7 @@ import {doc, initializeFirestore, setDoc} from "firebase/firestore";
 import crypto from "crypto";
 
 const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY||'mock_key',
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,
     projectId: "flux-fashion",
     storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
